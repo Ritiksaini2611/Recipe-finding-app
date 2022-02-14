@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Meal For your Ingredient</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- -------------------navbar 1------------------------------------- -->
+
+      <div class="nav1">
+        <div class="brand-logo">
+          <img src="logo.png" alt="" />
+        </div>
+        <div class="short-links">
+          <a href="#">Blog</a>
+          <a href="#">Login</a>
+        </div>
+      </div>
+
+      <!-- -----------------navbar responsive---------------------------------- -->
+
+      <div class="nav2-container">
+        <div class="nav2">
+          <div class="brand-logo">
+            <img src="logo.png" alt="" />
+          </div>
+          <div class="ham-icon">
+            <button class="hamburger-btn">
+              <i class="fa-solid fa-burger"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="overlay">
+          <div class="short-links text">
+            <a href="#">Blog</a>
+            <a href="#">Login</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="meal-wrapper">
+        <div class="meal-search">
+          <h2 class="title">Find a Meal for your Craving</h2>
+          <blockquote><i>"Made at Home, Made it healthy."</i><br /></blockquote>
+
+          <div class="meal-search-box">
+            <input
+              type="text"
+              class="search-control"
+              placeholder="Enter an Ingredient"
+              id="search-input"
+            />
+            <button class="search-btn btn" id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- ------------------------ MEAL RESULT-------------------------- -->
+
+        <div class="meal-result">
+          <h2 class="title">Your Search Results</h2>
+          <div id="meal"></div>
+        </div>
+
+        <!-- ---------------------------- MEAL DETAILS ------------------------------ -->
+
+        <div class="meal-details">
+          <button
+            type="button"
+            class="btn recipe-close-btn"
+            id="recipe-close-btn"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+
+          <div class="meal-details-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------- script file----------------------------------- -->
+
+    <script src="function.js"></script>
+  </body>
+</html>
